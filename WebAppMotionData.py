@@ -4,8 +4,8 @@ import pandas as pd
 
 st.title('Height, Weight, Age, Gender and Activity Predictor')
 
-numerical_pipeline = joblib.load('/Users/yashkumar/Jupyter/Projects/ML-Projects/Project7/final_pipeline_numerical')
-categorical_pipeline = joblib.load('/Users/yashkumar/Jupyter/Projects/ML-Projects/Project7/final_pipeline_categorical')
+numerical_pipeline = joblib.load('final_pipeline_numerical')
+categorical_pipeline = joblib.load('final_pipeline_categorical')
 
 st.sidebar.header('Input Parameters')
 
