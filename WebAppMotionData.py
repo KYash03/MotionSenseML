@@ -42,7 +42,7 @@ if sum(data.values()):
     gender = ['Female', 'Male']
     st.write('4. **Gender**: {}'.format(gender[categorical_predictions[0]]))
     st.write(
-        '6. **Activity**: {}'.format(activities[categorical_predictions[1]]))
+        '5. **Activity**: {}'.format(activities[categorical_predictions[1]]))
 
 st.markdown('***')
 st.header('About')
