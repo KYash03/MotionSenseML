@@ -1,13 +1,11 @@
-# Web App Link: https://kyash03-motionsenseml-webappmotiondata-dgmcfo.streamlit.app
-
 import streamlit as st
 import joblib
 import pandas as pd
 
 st.title('Height, Weight, Age, Gender and Activity Predictor')
 
-numerical_pipeline = joblib.load('final_pipeline_numerical')
-categorical_pipeline = joblib.load('final_pipeline_categorical')
+numerical_pipeline = joblib.load('/Users/yashkumar/Jupyter/Projects/ML-Projects/Project7/final_pipeline_numerical')
+categorical_pipeline = joblib.load('/Users/yashkumar/Jupyter/Projects/ML-Projects/Project7/final_pipeline_categorical')
 
 st.sidebar.header('Input Parameters')
 
@@ -42,7 +40,7 @@ if sum(data.values()):
     gender = ['Female', 'Male']
     st.write('4. **Gender**: {}'.format(gender[categorical_predictions[0]]))
     st.write(
-        '5. **Activity**: {}'.format(activities[categorical_predictions[1]]))
+        '6. **Activity**: {}'.format(activities[categorical_predictions[1]]))
 
 st.markdown('***')
 st.header('About')
