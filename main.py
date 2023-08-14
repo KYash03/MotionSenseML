@@ -26,11 +26,6 @@ numerical_pipeline = joblib.load(
 categorical_pipeline = joblib.load(
     "final_pipeline_categorical")
 
-
-@app.get("/test")
-def test():
-    return "TEST"
-
 @app.post("/predict")
 def prediction(input_parameters: SensorData):
     input_data = input_parameters.json()
