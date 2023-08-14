@@ -31,7 +31,7 @@ categorical_pipeline = joblib.load(
 def test():
     return "TEST"
 
-@app.get("/predict")
+@app.post("/predict")
 def prediction(input_parameters: SensorData):
     input_data = input_parameters.json()
     input_df = json.loads(input_data)

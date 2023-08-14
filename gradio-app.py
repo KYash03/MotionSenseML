@@ -36,7 +36,7 @@ def api_request(attitude_roll, attitude_pitch, attitude_yaw, gravity_x, gravity_
         "userAcceleration_y": userAcceleration_y,
         "userAcceleration_z": userAcceleration_z
     }
-    response = requests.post("http://127.0.0.1:8000/predict", json=data)
+    response = requests.post("http://35.183.120.75/predict", json=data)
     prediction = response.json()
     formatted_output = "Height: {} cm\nWeight: {} kg\nAge: {}\nGender: {}\nActivity: {}".format(
         prediction["height"], prediction["weight"], prediction["age"], prediction["gender"], prediction["activity"]
